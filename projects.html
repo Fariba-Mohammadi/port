@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<h1 class="mb-4 text-center my-title " style="font-weight: bold; font-size: 50px;">My Projects</h1>
+
+<div class="row">
+
+
+
+<div class="container">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="Screenshot 2026-03-21 160839.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="my-title fw-bold"> 🟢Seafood Website
+           </h5>
+          <h6> A clean and visually appealing website focused on seafood dishes, designed with bright colors to create a fresh and inviting user experience. </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="istockphotob-.jpg" class="card-img-top">
+        <div class="card-body">
+        	<h5 class="my-title fw-bold"> 🔵AI Learning Website </h5>
+        	<h6> An informative website about artificial intelligence and its tools, offering structured courses from beginner to intermediate level. </h6>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="psychologist-g0.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="my-title fw-bold"> 🟣Psychologist Website </h5>
+          <h6> A professional platform a psychologist, allowing users to book therapy sessions and subscribe to educational courses for personal growth. </h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+<script>
+  const title = document.getElementById('myTitle');
+  const colors = ['#00FF00', '#0000FF', '#800080'];
+  let index = 0;
+
+  setInterval(() => {
+    title.style.color = colors[index];
+    index = (index + 1) % colors.length; 
+</script>
+
+</body>
+</html>

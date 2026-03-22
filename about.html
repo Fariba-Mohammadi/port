@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-left">
+        <h1>WELCOME</h1>
+        <p style="text-align: left;">Creative Designer
+            <br>
+        I have strong skills in front-end web development, <br>including HTML, CSS, JavaScript, and Bootstrap. <br>With these tools, I can design responsive and <br> user-friendly websites, bringing creative ideas to life with clean code and modern layouts.
+</p>
+    </div>
+
+    <div class="hero-right"></div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-box">
+
+        <div class="skill-item">
+            <p class="skill-title">HTML</p>
+            <div class="circle" data-percent="95">
+                <span>95%</span>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <p class="skill-title">CSS</p>
+            <div class="circle" data-percent="80">
+                <span>80%</span>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <p class="skill-title">Bootstrap</p>
+            <div class="circle" data-percent="80">
+                <span>80%</span>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <p class="skill-title">JavaScript</p>
+            <div class="circle" data-percent="60">
+                <span>60%</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.circle').forEach(circle => {
+    let percent = circle.getAttribute('data-percent');
+    circle.style.setProperty('--percent', percent);
+});
+</script>
+
+</body>
+</html>

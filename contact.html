@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #000;
+  z-index: 1000;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0f9d58;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.contact-section {
+  background: radial-gradient(circle at top left, #0f9d5820, transparent 40%),
+              linear-gradient(135deg, #000000, #1a1a2e, #16213e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px 40px;
+}
+
+
+.contact-box {
+  display: flex;
+  gap: 40px;
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(15,157,88,0.08);
+}
+
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left input,
+.contact-left textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-left input:focus,
+.contact-left textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #0f9d58;
+}
+
+.contact-left textarea {
+  height: 120px;
+}
+
+.contact-left button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #0f9d58;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-left button:hover {
+  background: #0c7a43;
+  box-shadow: 0 0 10px #0f9d58;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons i {
+  margin-right: 15px;
+  color: #0f9d58;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+}
+
+.contact-left h3 {
+  color: white;
+}
+
+.contact-left p {
+  color: #aaa;
+}
+
+/* RIGHT */
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+  gap: 15px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  box-shadow: 0 0 15px rgba(15,157,88,0.2);
+}
+
+.info-box i {
+  color: #0f9d58;
+  font-size: 20px;
+}
+
+.info-box h4 {
+  color: white;
+}
+
+.info-box p {
+  color: #bbb;
+}
+
+
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+  <nav class="header-nav">
+    <div class="logo">Fariba</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="contact-box">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Name">
+      <textarea placeholder="Message"></textarea>
+
+      <button onclick="sendMessage()">SUBMIT</button>
+
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+
+      <h3>Get in touch</h3>
+      <p>
+        Feel free to contact me anytime. I’m always open to new projects
+        and creative ideas.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+
+    	<div class="info-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>OUR MAIN OFFICE</h4>
+          <p>Herat, Afghanistan</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>PHONE NUMBER</h4>
+          <p>+93 799648941</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>EMAIL</h4>
+          <p>faribamohammadi41023@email.com</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+function sendMessage() {
+  alert("Message sent successfully 😎");
+}
+</script>
+
+</body>
+</html>
